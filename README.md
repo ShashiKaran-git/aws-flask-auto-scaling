@@ -83,14 +83,12 @@ Terraform (AWS)
 cd terraform
 terraform init
 terraform apply
-```
 
-## Kubernetes
+Kubernetes
 
 kubectl apply -f k8s/
-
 kubectl autoscale deployment flask-deployment --cpu-percent=50 --min=1 --max=5
-
+```
 ---
 
 ## 📸 Screenshots
