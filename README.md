@@ -44,7 +44,7 @@ User → Service → Deployment → Pods → HPA (Auto Scaling)
 - Instance marked unhealthy
 - Auto Scaling replaced instance automatically
 
-### Kubernetes
+### Kubernetes Load Test
 ```bash
 while true; do curl http://127.0.0.1:<port>; done
 - CPU usage increased
@@ -93,6 +93,8 @@ kubectl autoscale deployment flask-deployment --cpu-percent=50 --min=1 --max=5
 
 ## 📸 Screenshots
 
+These screenshots demonstrate real system behavior including auto scaling, monitoring, and load testing.
+
 ## AWS
 
 ### CPU Utilization Spike
@@ -104,7 +106,7 @@ kubectl autoscale deployment flask-deployment --cpu-percent=50 --min=1 --max=5
 ### Auto Scaling Activity
 ![ASG](assets/asg.png)
 
-## Kubernetes
+## Kubernetes (Scaling)
 
 ### HPA scaling (CPU spike)
 ![HPA scaling](assets/hpascaling.png)
@@ -130,3 +132,14 @@ kubectl autoscale deployment flask-deployment --cpu-percent=50 --min=1 --max=5
 * Built full DevOps pipeline (Terraform → Docker → Kubernetes)
 * Achieved automatic scaling under load
 * Implemented real-world monitoring and failure recovery
+
+---
+
+## 🎯 What This Project Demonstrates
+
+- End-to-end DevOps workflow (Infra → App → Scaling → Monitoring)
+- Difference between infrastructure scaling (AWS ASG) and workload scaling (Kubernetes HPA)
+- Real-world debugging (502/504 errors, port mismatch, health checks)
+- Observability using industry-standard tools (Prometheus + Grafana)
+
+---
