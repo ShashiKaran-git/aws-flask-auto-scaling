@@ -91,11 +91,13 @@ kubectl autoscale deployment flask-deployment --cpu-percent=50 --min=1 --max=5
 ```
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots (Scaling & Monitoring in Action)
 
 These screenshots demonstrate real system behavior including auto scaling, monitoring, and load testing.
 
-## AWS
+---
+
+## ☁️ AWS
 
 ### CPU Utilization Spike
 ![CPU Graph](assets/cwmetrics.png)
@@ -106,7 +108,9 @@ These screenshots demonstrate real system behavior including auto scaling, monit
 ### Auto Scaling Activity
 ![ASG](assets/asg.png)
 
-## Kubernetes (Scaling)
+---
+
+## ☸️ Kubernetes (Scaling)
 
 ### HPA scaling (CPU spike)
 ![HPA scaling](assets/hpascaling.png)
@@ -116,6 +120,19 @@ These screenshots demonstrate real system behavior including auto scaling, monit
 
 ### Load testing output
 ![Load testing](assets/loadtesting.png)
+
+---
+
+## 📊 Monitoring (Prometheus + Grafana)
+
+### CPU Usage per Pod
+![CPU Monitoring](assets/cpu-dashboard.png)
+
+### Memory Usage per Pod
+![Memory Monitoring](assets/memory-dashboard.png)
+
+### HPA / Pod Scaling Visualization
+![HPA Monitoring](assets/hpa-dashboard.png)
 
 ---
 
