@@ -1,16 +1,12 @@
-name: Build & Push Flask App Image
+name: CI/CD Flask App
 
 on:
   push:
-    paths:
-      - 'kubernetes/**'
-      - 'Dockerfile'
-      - '**.py'
     branches:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,3 +24,18 @@ jobs:
 
     - name: Push Docker image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
+
+    - name: Configure AWS
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-south-1
+
+    - name: Update kubeconfig
+      run: aws eks update-kubeconfig --region ap-south-1 --name flask-cluster
+
+    - name: Deploy to EKS
+      run: |
+        kubectl set image deployment/flask-deployment \
+        flask-container=${{ secrets.DOCKER_USERNAME }}/flask-app:latest
