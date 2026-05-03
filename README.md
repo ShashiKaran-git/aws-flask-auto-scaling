@@ -7,6 +7,28 @@ A production-style DevOps project demonstrating how to deploy, scale, and monito
 
 ## 🏗️ Architecture
 
+GitHub Push
+
+↓
+
+GitHub Actions (CI/CD)
+
+↓
+
+Docker Hub (versioned image)
+
+↓
+
+AWS EKS (Kubernetes cluster)
+
+↓
+
+Helm (manages deployment)
+
+↓
+
+LoadBalancer → Live App
+
 ### ☁️ AWS (Terraform)
 - Application Load Balancer (ALB)
 - EC2 instances (Dockerized Flask app)
