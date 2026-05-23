@@ -54,7 +54,7 @@ User → Service → Deployment → Pods → HPA (Auto Scaling)
 - Containerized Flask app deployment
 - Horizontal Pod Autoscaler (HPA)
 - CPU-based scaling (1 → 3 pods)
-- Self-healing pods
+- Self healing pods
 - Load testing using curl
 
 ---
@@ -118,7 +118,7 @@ aws-flask-auto-scaling/
 │       ├── service.yaml
 │       └── hpa.yaml
 ├── k8s/                      # Raw Kubernetes manifests
-├── terraform/                # AWS infrastructure
+├── terraform/                # AWS Infrastructure
 └── .github/workflows/
 └── k8s-deploy.yml        # CI/CD pipeline
 
