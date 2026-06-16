@@ -1,4 +1,4 @@
-# 🚀 AWS + Kubernetes Auto Scaling Flask App
+# 🚀 AWS and Kubernetes Auto Scaling Flask App
 
 ## 📌 Overview
 A production-style DevOps project demonstrating how to deploy, scale, and monitor a Flask application using AWS, Terraform, Docker, and Kubernetes.
@@ -145,7 +145,7 @@ helm upgrade --install flask-app ./flask-app \
   --set image.tag=latest
 ```
 
-### 3. Get Live URL
+### 3. Get live URL
 ```bash
 kubectl get svc
 ```
