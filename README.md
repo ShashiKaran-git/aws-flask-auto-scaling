@@ -1,7 +1,7 @@
 # 🚀 AWS and Kubernetes Auto Scaling Flask App
 
 ## 📌 Overview
-A production-style DevOps project demonstrating how to deploy, scale, and monitor a Flask application using AWS, Terraform, Docker, and Kubernetes.
+A production style Devops project demonstrating how to deploy, scale, and monitor a Flask application using AWS, Terraform, Docker, and Kubernetes.
 
 ---
 
@@ -176,7 +176,7 @@ These screenshots demonstrate real system behavior including auto scaling, monit
 
 ## ☁️ AWS
 
-### CPU Utilization Spike
+### CPU Utilization spike
 ![CPU Graph](assets/cwmetrics.png)
 
 ### CloudWatch Alarm Triggered
@@ -187,7 +187,7 @@ These screenshots demonstrate real system behavior including auto scaling, monit
 
 ---
 
-## ☸️ Kubernetes (Scaling)
+## ☸️ Kubernetes (scaling)
 
 ### HPA scaling (CPU spike)
 ![HPA scaling](assets/hpascaling.png)
