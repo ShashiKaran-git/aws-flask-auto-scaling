@@ -7,7 +7,7 @@ A production-style DevOps project demonstrating how to deploy, scale, and monito
 
 ## 🏗️ Architecture
 
-GitHub Push
+Github push
 
 ↓
 
@@ -46,7 +46,7 @@ User → Service → Deployment → Pods → HPA (Auto Scaling)
 ### AWS
 - High availability with ALB
 - Auto Scaling based on CPU usage
-- Self-healing EC2 instances
+- Self healing EC2 instances
 - Monitoring with CloudWatch
 - Email alerts via SNS
 
