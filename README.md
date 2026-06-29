@@ -105,7 +105,7 @@ kubectl get hpa
 
 ---
 
-## 📁 Project Structure
+## 📁 Project structure
 aws-flask-auto-scaling/
 ├── app.py                    # Flask application
 ├── Dockerfile                # Container definition
@@ -124,7 +124,7 @@ aws-flask-auto-scaling/
 
 ---
 
-## 🚀 How to Deploy
+## 🚀 How to deploy
 
 ### Prerequisites
 - AWS CLI configured
