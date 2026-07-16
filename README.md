@@ -27,7 +27,7 @@ Helm (manages deployment)
 
 ↓
 
-LoadBalancer → Live App
+LoadBalancer → Live app
 
 ### ☁️ AWS (Terraform)
 - Application Load Balancer (ALB)
@@ -52,7 +52,7 @@ User → Service → Deployment → Pods → HPA (Auto Scaling)
 
 ### Kubernetes
 - Containerized Flask app deployment
-- Horizontal Pod Autoscaler (HPA)
+- Horizontal Pod autoscaler (HPA)
 - CPU-based scaling (1 → 3 pods)
 - Self healing pods
 - Load testing using curl
@@ -95,7 +95,7 @@ kubectl get hpa
 | Tool | Purpose |
 |------|---------|
 | Flask | Web application |
-| Docker | Containerization |
+| Docker | containerization |
 | Kubernetes (EKS) | Container orchestration |
 | Helm | Kubernetes package manager |
 | GitHub Actions | CI/CD automation |
@@ -139,7 +139,7 @@ eksctl create cluster \
   --nodes 2
 ```
 
-### 2. Deploy with Helm
+### 2. Deploy with helm
 ```bash
 helm upgrade --install flask-app ./flask-app \
   --set image.tag=latest
@@ -182,7 +182,7 @@ These screenshots demonstrate real system behavior including auto scaling, monit
 ### CloudWatch Alarm Triggered
 ![Alarm](assets/alarm.png)
 
-### Auto Scaling Activity
+### Auto Scaling activity
 ![ASG](assets/asg.png)
 
 ---
